@@ -10,4 +10,4 @@ developed by Google instead of the legacy Eclipse plugin that is no longer suppo
 The config.xml to configure plugins can be found in app/res/xml.  Unfortunately, plugins will have to be manually installed, since plugman
 does not support this new directory structure.
 
-As usual, this code is licenced under the Apache Licence v2.0
+As usual, this code is licenced under the Apache Licence v2.0, and this is intended as a code example only.
