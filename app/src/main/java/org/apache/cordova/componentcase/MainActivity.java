@@ -67,11 +67,11 @@ public class MainActivity extends ActionBarActivity
 
         //Set up the webview
         SystemWebView webView = (SystemWebView) findViewById(R.id.WebViewComponent);
-        ConfigXmlParser fuckYouAndrew = new ConfigXmlParser();
-        fuckYouAndrew.parse(this);
+        ConfigXmlParser configXmlParser = new ConfigXmlParser();
+        configXmlParser.parse(this);
         webInterface = new CordovaWebViewImpl(this, new SystemWebViewEngine(webView));
-        webInterface.init(stupidface, fuckYouAndrew.getPluginEntries(), fuckYouAndrew.getPreferences());
-        webView.loadUrl(fuckYouAndrew.getLaunchUrl());
+        webInterface.init(stupidface, configXmlParser.getPluginEntries(), configXmlParser.getPreferences());
+        webView.loadUrl(configXmlParser.getLaunchUrl());
     }
 
     @Override
