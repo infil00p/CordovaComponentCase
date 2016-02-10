@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/jbowser/ComponentCase/CordovaLib/assets"><file name="www/cordova.js" path="/Users/jbowser/ComponentCase/CordovaLib/assets/www/cordova.js"/><file name="www/index.html" path="/Users/jbowser/ComponentCase/CordovaLib/assets/www/index.html"/></source></dataSet><dataSet config="debug"><source path="/Users/jbowser/ComponentCase/CordovaLib/src/debug/assets"/></dataSet></merger>

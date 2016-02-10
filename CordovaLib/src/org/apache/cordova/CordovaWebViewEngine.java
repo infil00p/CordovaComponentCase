@@ -22,7 +22,7 @@ import android.view.KeyEvent;
 import android.view.View;
 
 /**
- * Interfcae for all Cordova engines.
+ * Interface for all Cordova engines.
  * No methods will be added to this class (in order to be compatible with existing engines).
  * Instead, we will create a new interface: e.g. CordovaWebViewEngineV2
  */
@@ -72,11 +72,10 @@ public interface CordovaWebViewEngine {
      */
     public interface Client {
         Boolean onDispatchKeyEvent(KeyEvent event);
-        boolean shouldOverrideUrlLoading(String url);
         void clearLoadTimeoutTimer();
         void onPageStarted(String newUrl);
         void onReceivedError(int errorCode, String description, String failingUrl);
         void onPageFinishedLoading(String url);
-        void onScrollChanged(int l, int t, int oldl, int oldt);
+        boolean onNavigationAttempt(String url);
     }
 }
